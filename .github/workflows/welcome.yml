@@ -1,0 +1,12 @@
+name: Post welcome comment
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  pull-requests: write
+
+jobs:
+  post_welcome_comment:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "welcome to bahamas and have a nice day"
